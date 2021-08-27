@@ -14,6 +14,7 @@ public class Main {
             }
             Snail snail = new Snail(h, a, b);
             System.out.println(snail.howLong());
+            System.out.println(snail.snailsFor());
         }
     }
 }

@@ -1,7 +1,5 @@
 package task1.myTask11;
 
-import task1.myTask1.Swaper;
-
 import java.util.Scanner;
 
 public class SwapArray {
@@ -36,9 +34,9 @@ public class SwapArray {
     }
     public void swapArrayElement() {
         for (int i = 1; i < array.length; i+=2) {
-            Swaper swaper = new Swaper(array[i-1],array[i]);
-            array[i-1] = swaper.getA();
-            array[i] = swaper.getB();
+            int buf = array[i-1];
+            array[i-1] = array[i];
+            array[i] = buf;
         }
     }
 }

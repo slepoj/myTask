@@ -13,7 +13,21 @@ public class Snail {
 
     public int howLong(){
         int k = b/(a-b);
-        int days = (h-k)/(a-b);
+        int days = (h)/(a-b) - 1;
+        return days;
+    }
+
+    public int snailsFor (){
+        int days = 0;
+        while (h>=a){
+            if (h==a){
+                days++;
+                return days;
+            }
+            days++;
+            h=h-a+b;
+        }
+        days++;
         return days;
     }
 }

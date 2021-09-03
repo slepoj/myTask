@@ -8,6 +8,10 @@ public class ArrayMaxNum {
     public ArrayMaxNum(int size) {
         array = new int[size];
     }
+    public ArrayMaxNum(int size, int array []) {
+        this.array = new int[size];
+        this.array = array;
+    }
 
     public void setNumberOfArray() {
         Scanner in = new Scanner(System.in);
@@ -42,6 +46,13 @@ public class ArrayMaxNum {
             }
         }
         return maxNum;
+    }
+
+
+    public static void start(int a, int arr[]) {
+        System.out.println("task 9:");
+        ArrayMaxNum arrayMaxNum = new ArrayMaxNum(a,arr);
+        System.out.println("result is " + arrayMaxNum.findMaxNum());
     }
 
 }

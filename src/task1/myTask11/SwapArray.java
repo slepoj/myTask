@@ -11,6 +11,11 @@ public class SwapArray {
         array = new int[size];
     }
 
+    public SwapArray(int size, int[] array) {
+        this.size = size;
+        this.array = array;
+    }
+
     public void setNumberOfArray() {
         Scanner in = new Scanner(System.in);
         for (int i = 0; i < array.length; i++) {
@@ -32,11 +37,20 @@ public class SwapArray {
             System.out.print(num + " ");
         }
     }
+
     public void swapArrayElement() {
-        for (int i = 1; i < array.length; i+=2) {
-            int buf = array[i-1];
-            array[i-1] = array[i];
+        for (int i = 1; i < array.length; i += 2) {
+            int buf = array[i - 1];
+            array[i - 1] = array[i];
             array[i] = buf;
         }
+    }
+
+    public static void start(int a, int arr[]) {
+        System.out.println("task 11:");
+        SwapArray swapArray = new SwapArray(a, arr);
+        swapArray.swapArrayElement();
+        System.out.print("result is ");
+        swapArray.getArray();
     }
 }

@@ -22,6 +22,14 @@ public class DifferenceSeconds {
 
     @Override
     public String toString() {
-        return String.valueOf(difference());
+        return "difference is "+String.valueOf(difference()) + "sec";
+    }
+
+
+
+    public static void start(int a, int a2, int a3, int b, int b2, int b3) {
+        System.out.println("task 3:");
+        DifferenceSeconds diffSec = new DifferenceSeconds(a,a2,a3,b,b2,b3);
+        System.out.println(diffSec);
     }
 }

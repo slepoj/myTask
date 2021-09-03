@@ -17,4 +17,12 @@ public class Rook {
             System.out.println("NO");
         }
     }
+
+
+    public static void start(int x1, int y1, int x2, int y2) {
+        System.out.println("task 7:");
+        Rook rook = new Rook(x1, y1, x2, y2);
+        rook.killFigure();
+    }
+
 }

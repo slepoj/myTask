@@ -18,4 +18,11 @@ public class FindEquals {
         }
         return 0;
     }
+
+
+    public static void start(int a, int b, int c) {
+        System.out.println("task 8:");
+        FindEquals findEquals = new FindEquals(a, b, c);
+        System.out.println("Number is " + findEquals.findNum());
+    }
 }

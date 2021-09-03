@@ -1,7 +1,5 @@
 package task1.myTask7;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         while (true) {

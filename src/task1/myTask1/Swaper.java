@@ -8,4 +8,9 @@ public class Swaper {
         b = buf;
         System.out.println("a = " + a + "; b = " + b);
     }
+    public static void start(int a, int b) {
+        System.out.println("task 1:");
+        Swaper.swap(a,b);
+    }
+
 }

@@ -11,6 +11,11 @@ public class MoreNeighbors {
         array = new int[size];
     }
 
+    public MoreNeighbors(int size, int[] array) {
+        this.size = size;
+        this.array = array;
+    }
+
     public void setNumberOfArray() {
         Scanner in = new Scanner(System.in);
         for (int i = 0; i < array.length; i++) {
@@ -42,5 +47,10 @@ public class MoreNeighbors {
             }
         }
         return maxNum;
+    }
+    public static void start(int a, int arr[]) {
+        System.out.println("task 10:");
+        MoreNeighbors moreNeighbors = new MoreNeighbors(a, arr);
+        System.out.println("result is " + moreNeighbors.findMaxNum());
     }
 }

@@ -19,16 +19,19 @@ public class Car {
             default:
                 numDay++;
         }
+        System.out.print("Nomber of day is ");
         return numDay;
     }
 
     public int day2() {
-        int numDay;
-        //try {
-            numDay = (int) (length / dayLength + Math.signum(length % dayLength));
-        //} catch (Exception e) {
-           // numDay = length / dayLength;
-        //}
-        return numDay;
+        System.out.print("Nomber of day is ");
+        return  (int) (length / dayLength + Math.signum(length % dayLength));
+    }
+
+
+    public static void start(int a, int b) {
+        System.out.println("task 4:");
+        Car car  =new Car(a,b);
+        System.out.println(car.day());
     }
 }

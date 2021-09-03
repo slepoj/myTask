@@ -11,23 +11,30 @@ public class Snail {
         this.b = b;
     }
 
-    public int howLong(){
-        int k = b/(a-b);
-        int days = (h)/(a-b) - 1;
-        return days;
+    public int howLong() {
+        return 1 + (h - b - 1) / (a - b);
     }
 
-    public int snailsFor (){
+    public int snailsFor() {
         int days = 0;
-        while (h>=a){
-            if (h==a){
+        while (h >= a) {
+            if (h == a) {
                 days++;
                 return days;
             }
             days++;
-            h=h-a+b;
+            h = h - a + b;
         }
         days++;
         return days;
+    }
+
+    public static void start(int h, int a, int b) {
+        System.out.println("task 5:");
+        while (b > a) {
+            System.out.println("incorrect data, b>a");
+        }
+        Snail snail = new Snail(h, a, b);
+        System.out.println("snail need " + snail.howLong() + " days");
     }
 }
